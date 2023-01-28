@@ -1,0 +1,22 @@
+global:
+  css:
+    theme:
+      dist/components/global.css: {}
+      //fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300;400;500;600;700&family=Solitreo&display=swap:
+        { type: external }
+      # //fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300;400;500;600;700&display=swap:
+      #   { type: external }
+
+header:
+  css:
+    theme:
+      dist/components/organisms/header.css: {}
+  js:
+    dist/components/main.js:
+    dist/components/organisms/navbar.js:
+      attributes:
+        type: module
+# tailwind:
+#   css:
+#     theme:
+#       dist/components/tailwind.css: {}

@@ -19,6 +19,9 @@
         "drupal/core-composer-scaffold": "^9.5",
         "drupal/core-project-message": "^9.5",
         "drupal/core-recommended": "^9.5",
+        "drupal/devel": "^5.0",
+        "drupal/paragraphs": "^1.14",
+        "drupal/simple_gmap": "^3.0",
         "drush/drush": "^11.4"
     },
     "conflict": {

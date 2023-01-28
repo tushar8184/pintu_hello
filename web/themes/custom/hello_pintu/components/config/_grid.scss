@@ -1,0 +1,6 @@
+// Define Width utility classes here
+@mixin container {
+  box-sizing: border-box;
+  max-width: 1300px;
+  margin: 0 auto;
+}
