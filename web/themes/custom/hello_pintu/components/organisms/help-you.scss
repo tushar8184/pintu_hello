@@ -1,0 +1,91 @@
+@import '../config.all';
+
+.help-container {
+  @include breakpoint($mobile) {
+    flex-direction: column;
+    gap: 2em;
+    padding: 0 1rem;
+  }
+  @include breakpoint($tablet) {
+    flex-direction: column;
+    gap: 2em;
+    padding: 0 1rem;
+  }
+  @include breakpoint($desktop) {
+    padding: 0 1rem;
+  }
+  @include container;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+
+  &__text {
+    min-width: 57rem;
+    @include breakpoint($mobile) {
+      min-width: 100%;
+    }
+    @include breakpoint($tablet) {
+      min-width: 100%;
+    }
+    @include breakpoint($desktop) {
+      min-width: 100%;
+    }
+  }
+
+  &__text-button {
+    h2 {
+      margin: 0;
+      font-size: clamp(8.7rem, 1rem, 3rem);
+      font-weight: 700;
+      line-height: 9.6rem;
+      color: var(--c-grey-200);
+    }
+    span {
+      font-weight: 300;
+      @include breakpoint($mobile) {
+        font-size: clamp(5.7rem, 5rem, 5rem);
+        line-height: 5.6rem;
+      }
+    }
+    p {
+      margin: 2.5rem 0 4rem 0;
+      font-size: 1.7rem;
+      line-height: 2.4rem;
+      color: var(--c-grey-200);
+      // background-color: red;
+    }
+    a {
+      @include small-700-17;
+      @include link-clear;
+      display: inline-block;
+      background-color: var(--c-grey-200);
+      padding: 2.2rem 4.9rem;
+      color: var(--c-white);
+      border-radius: 1rem;
+    }
+
+    // max-width: 40rem;
+  }
+  &__banner-image {
+    max-width: 72.1rem;
+    img {
+      @include breakpoint($mobile) {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin-top: 30px;
+      }
+      @include breakpoint($tablet) {
+        display: block;
+        max-width: 100%;
+        height: auto;
+      }
+      @include breakpoint($desktop) {
+        display: block;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
