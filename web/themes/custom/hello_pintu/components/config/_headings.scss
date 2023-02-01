@@ -1,0 +1,12 @@
+// Define Heading utility classes here
+@mixin heading-1 {
+  font-family: var(--f-primary);
+  font-weight: 700;
+  font-size: 8.7rem;
+}
+
+@mixin heading-2 {
+  font-family: var(--f-primary);
+  font-weight: 300;
+  font-size: 87px;
+}

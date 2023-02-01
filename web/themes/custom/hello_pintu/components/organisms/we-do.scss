@@ -1,0 +1,96 @@
+@import '../config.all';
+
+.we-do {
+  font-family: var(--f-primary);
+  overflow: hidden;
+  margin: 7rem 0;
+
+  &__title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: var(--c-grey-200);
+    h2 {
+      font-size: clamp(4.8rem, 1rem, 2rem);
+    }
+
+    p {
+      font-size: clamp(4.8rem, 1rem, 1rem);
+      font-weight: 300;
+      color: var(--c-grey-200);
+    }
+  }
+
+  &__arrow-body {
+    margin-right: 4rem;
+    min-width: 9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  &__right-arrow,
+  &__left-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 2rem;
+    max-height: 2rem;
+    border: 1px solid;
+    border-radius: 50%;
+    padding: 1.9rem 1.7rem 1.7rem 1.9rem;
+    border: 1px solid;
+  }
+
+  &__right-arrow img {
+    cursor: pointer;
+  }
+  &__left-arrow img {
+    cursor: pointer;
+    transform: scaleX(-1);
+  }
+  &__arrow-card {
+    display: flex;
+    position: relative;
+    left: 10rem;
+  }
+}
+
+.we-do-card {
+  max-width: 30.8rem;
+  box-shadow: 0px 0px 9px 2px rgba(9, 9, 9, 0.05);
+  padding: 1.9rem 1rem 1.9rem 1.9rem;
+  border-radius: 1rem;
+  margin: 1rem 4rem 0.5rem 0;
+
+  &__title,
+  &__subtitle {
+    max-width: 100%;
+  }
+  &__title {
+    font-size: clamp(1.6rem, 1rem, 1rem);
+    font-weight: 700;
+    margin: 1.3rem 0;
+  }
+  &__subtitle {
+    font-size: clamp(1.5rem, 1rem, 1rem);
+    font-weight: 300;
+  }
+  &__icon img {
+    display: block;
+    padding: 9px;
+    min-width: 5.2rem;
+    min-height: 5.2rem;
+    background-color: var(--c-dark-pink);
+    border-radius: 1rem;
+  }
+}
+
+.we-do-card-body {
+  display: flex;
+  max-width: 100%;
+}
+
+.we-do__arrow-card {
+  @include container;
+  margin-top: 8.5rem;
+}

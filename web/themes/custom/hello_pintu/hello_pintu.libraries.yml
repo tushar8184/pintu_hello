@@ -1,0 +1,47 @@
+global:
+  css:
+    theme:
+      dist/components/global.css: {}
+      # //fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300;400;500;600;700&family=Solitreo&display=swap:
+      #   { type: external }
+      //fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300;400;500;600;700&display=swap:
+        { type: external }
+
+header:
+  css:
+    theme:
+      dist/components/organisms/header.css: {}
+  js:
+    dist/components/organisms/navbar.js:
+    dist/components/main.js:
+      attributes:
+        type: module
+
+help:
+  css:
+    theme:
+      dist/components/organisms/help-you.css: {}
+
+wedo:
+  css:
+    theme:
+      dist/components/organisms/we-do.css: {}
+  js:
+    slider/we-do.js:
+  dependencies:
+    - hello_pintu/slick
+
+slick:
+  css:
+    theme:
+      node_modules/slick-carousel/slick/slick.css: {}
+  js:
+    node_modules/slick-carousel/slick/slick.js:
+  dependencies:
+    - core/jquery
+
+
+# tailwind:
+#   css:
+#     theme:
+#       dist/components/tailwind.css: {}

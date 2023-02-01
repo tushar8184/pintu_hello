@@ -1,0 +1,14 @@
+@import 'config.all';
+@import 'base/*.scss';
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 62.5%;
+}
+
+// font-size: 10px;
+// font-size: 1rem;
